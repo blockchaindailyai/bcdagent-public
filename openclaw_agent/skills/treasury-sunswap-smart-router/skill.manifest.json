@@ -1,0 +1,45 @@
+{
+  "schema_version": "bankofai-skill-v1",
+  "skill_id": "treasury-sunswap-smart-router",
+  "name": "Treasury SunSwap Smart Router Operations",
+  "version": "1.0.0",
+  "description": "Deterministic SunSwap Smart Router swap execution workflow for TRON Nile/Mainnet with OpenClaw policy and audit controls.",
+  "owner": "BCDAgent",
+  "runtime": {
+    "python_module": "openclaw_agent.turnkey",
+    "commands": [
+      "health",
+      "setup-mcp-testnet",
+      "search-reviewer-operator",
+      "run-smart-router-swap"
+    ]
+  },
+  "dependencies": {
+    "docs": [
+      "openclaw_agent/docs/SUNSWAP_SMART_ROUTER_DETERMINISTIC_GUIDE.md"
+    ],
+    "reference_contract": "vendor/sun-protocol/smart-exchange-router/contracts/SmartExchangeRouter.sol"
+  },
+  "waves": {
+    "wave_1": {
+      "status": "complete",
+      "scope": [
+        "policy_controls",
+        "execution_adapter",
+        "governance",
+        "config_management"
+      ]
+    },
+    "wave_2": {
+      "status": "complete",
+      "scope": [
+        "verification",
+        "audit",
+        "rollout",
+        "operations",
+        "indexing",
+        "reviewer_operator_search"
+      ]
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "schema": "openclaw-extension-install-v1",
+  "extension": {
+    "id": "openclaw-agent-treasury-tron",
+    "displayName": "OpenClaw Agent Treasury Extension",
+    "category": "treasury-operations",
+    "defaultNetwork": "tron-nile",
+    "integrations": {
+      "runtimeConfig": "openclaw_agent/config/testnet_turnkey.json",
+      "mcpServer": "mcp-server-tron",
+      "searchService": "openclaw_agent.turnkey.search_service"
+    }
+  },
+  "skills": [
+    {
+      "id": "treasury-justlend-operations",
+      "path": "../../skills/treasury-justlend-operations",
+      "required": true
+    },
+    {
+      "id": "treasury-sunswap-smart-router",
+      "path": "../../skills/treasury-sunswap-smart-router",
+      "required": false
+    }
+  ],
+  "artifacts": {
+    "policy": "openclaw_agent/capabilities/policy_controls.py",
+    "executionAdapter": "openclaw_agent/capabilities/execution_adapter.py",
+    "audit": "openclaw_agent/capabilities/audit.py",
+    "rollout": "openclaw_agent/capabilities/rollout.py"
+  }
+}

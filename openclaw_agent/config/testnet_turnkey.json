@@ -1,0 +1,37 @@
+{
+  "network": "tron-nile",
+  "chain_id": "nile",
+  "rpc_url": "https://rpc.example.invalid",
+  "signer_rpc_url": "https://signer.example.invalid",
+  "tronscan_api": "https://explorer.example.invalid",
+  "mcp_server_tron_url": "",
+  "use_mcp_server_tron": false,
+  "subgraph_indexer_url": "",
+  "subgraph_indexer_local_path": "openclaw_agent/data/subgraph/events.jsonl",
+  "enable_local_signing_fallback": true,
+  "permission_id": 0,
+  "addresses": {
+    "treasury": "TKCC6pVJgyeS5NSmRwZUvg1Jho3rnUNach",
+    "strategy_module": "TSe38kWGzDXPiJZpd7r9EqsESeMtVX1p28",
+    "justlend_ops_module": "TPBMtQEQvFHz6jw9NmxkbpTvvw4D2Lafb4",
+    "operator": "TRwkyagc7W9vru91gKaC9r7cbZYo28ZSmY",
+    "justlend_controller": "TPEA5FhBK1n27Dr1zdirM33M4nvpCjkdDp",
+    "jtrx_market": "TAutUnFJhvocKb3egsma3vBEEEkznPbokk",
+    "jusdt_market": "TGQND9cgWQKeCx27C6Ciq398pCqgrjaFqU"
+  },
+  "allowed_assets": {
+    "TRX": "TRX",
+    "sTRX": "TX4L98ZMqWkqRuHizNCY3taxBc4FWsU3Dd",
+    "jTRX": "TAutUnFJhvocKb3egsma3vBEEEkznPbokk",
+    "USDT": "TQHyk9zmKKdqs9Q5NFj8ervEWo1paDre8L",
+    "jUSDT": "TGQND9cgWQKeCx27C6Ciq398pCqgrjaFqU"
+  },
+  "policy": {
+    "borrower_account_mode": "justlend_ops_module"
+  },
+  "signer_wallets": {
+    "execution": "TRwkyagc7W9vru91gKaC9r7cbZYo28ZSmY",
+    "emergency": "TJ3BRsyhiaRV35i5EH94huozh2JCEnBLak",
+    "analytics": "TKCC6pVJgyeS5NSmRwZUvg1Jho3rnUNach"
+  }
+}

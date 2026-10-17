@@ -1,0 +1,23 @@
+{
+  "name": "mcp-server-tron",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Production-oriented MCP TRON transport server for Nile testnet",
+  "main": "src/server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node src/server.js",
+    "start:nile": "node src/server.js",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "express-rate-limit": "^7.5.0",
+    "helmet": "^8.0.0",
+    "morgan": "^1.10.0"
+  }
+}

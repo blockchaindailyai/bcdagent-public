@@ -1,0 +1,19 @@
+{
+  "schema_version": "bankofai-openclaw-extension-v1",
+  "extension_id": "openclaw-agent-treasury-tron",
+  "name": "OpenClaw Treasury + JustLend Extension",
+  "version": "2.0.0",
+  "description": "BankofAI-standard OpenClaw extension package for policy-gated TRON treasury and JustLend operations.",
+  "publisher": "BCDAgent",
+  "entrypoint": "install/openclaw.extension.json",
+  "skills_root": "../skills",
+  "wave_status": {
+    "wave_1": "complete",
+    "wave_2": "complete"
+  },
+  "dependencies": {
+    "mcp_server": "mcp-server-tron",
+    "runtime": "openclaw_agent.turnkey",
+    "identity_rails": "TRC-8004"
+  }
+}

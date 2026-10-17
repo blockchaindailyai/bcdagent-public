@@ -1,0 +1,25 @@
+{
+  "dependencies": {
+    "ethers": "^6.17.0",
+    "git": "^0.1.5",
+    "tronweb": "^6.2.1"
+  },
+  "name": "bcdagent",
+  "version": "1.0.0",
+  "description": "This repository contains several independent projects (frontend, API, scraper, contracts, and OpenClaw automation).",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs",
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "npm run test:js && npm run test:py",
+    "test:js": "npm --prefix bcd-intel-api test && npm --prefix mcp-server-tron test",
+    "test:py": "python -B tools/test_offline.py",
+    "test:scraper": "python -m pytest -q scraper_bot/tests",
+    "lint:frontend": "npm --prefix bcd-treasury-frontend run lint"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,53 @@
+# Environment
+.env
+.env.*
+!.env.example
+
+# Node
+node_modules/
+dist/
+build/
+.next/
+out/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+*.egg-info/
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+
+# Keys
+*.pem
+*.key
+keystore/
+
+# Hardhat/Foundry/Tron artifacts
+artifacts/
+cache/
+broadcast/
+
+feed.json
+rss_state.json
+solana_state.json
+
+# scraper runtime state
+scraper_bot/.data/eth_state.json
+scraper_bot/.data/tron_state.json
+scraper_bot/.data/token_price_cache.json
+scraper_bot/.data/*_state.json
+
+# OpenClaw PK
+# openclaw_agent/config/testnet_turnkey.json
+
+# Local runbook with sensitive local token examples
+startup-guide.txt
+
+
+
+.data

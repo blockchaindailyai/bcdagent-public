@@ -1,0 +1,28 @@
+{
+  "schema_version": "bankofai-skill-v1",
+  "skill_id": "treasury-justlend-operations",
+  "name": "Treasury JustLend Operations",
+  "version": "2.0.0",
+  "description": "Policy-first intent generation and execution planning for TRON treasury and JustLend strategy workflows.",
+  "owner": "BCDAgent",
+  "runtime": {
+    "python_module": "openclaw_agent.turnkey",
+    "commands": [
+      "health",
+      "check-borrow-ready",
+      "run-jtrx",
+      "search-reviewer-operator",
+      "setup-mcp-testnet"
+    ]
+  },
+  "waves": {
+    "wave_1": {
+      "status": "complete",
+      "scope": ["policy_controls", "execution_adapter", "governance", "config_management"]
+    },
+    "wave_2": {
+      "status": "complete",
+      "scope": ["verification", "audit", "rollout", "operations", "indexing", "reviewer_operator_search"]
+    }
+  }
+}
